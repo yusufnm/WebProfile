@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Web Profile</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1>Homepage</h1>
+        </div>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <div class="sidebar" id="sidebar">
+            <ul>
+                <li>
+                    <a href="homepage.html">
+                        Homepage
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html">
+                        Profile
+                    </a>
+                </li>
+                <li>
+                    <a href="portfolio.html">
+                        Portfolio
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+            </ul>    
+        </div>
+        <div class="content">
+            <p> For more information, you can contact me at e-mail ucupmakanapa@gmail.com
+            </p>
+        </div>
+        <script>
+            const menuToggle = document.getElementById('menu-toggle');
+            const sidebar = document.getElementById('sidebar');
+        
+            menuToggle.addEventListener('click', () => {
+                sidebar.classList.toggle('active');
+            })
+        </script>
+    </body>
+</html>
